@@ -1,0 +1,16 @@
+Autor: Cote Teodor Mihai 323CA
+
+convert_to_native: nimic in special in principiu, fac o parcurgere si pun cate doua cifre intr-o byte.
+Mai intai calculez lungimea si verific semnul. Daca semnul e negatic scad cu 1 din lungime. 
+Lungimea din reprezentarea numarului va fi : (nr de caractere + 1) / 2
+
+printare_numar: in principiu verific daca prima cifra din primul octet este 0, daca da atunci sar peste ea (nu o afisez)
+daca nu, afisez le afisez pe ambele si incep sa afisez apoi unul cate unul, transformand din integer in caractere cu o functie speciala
+
+operatii:
+	adunare: destul de complicat, mai intai aflu lungimea maxima a celor doua numere (imi trebuie pentru complement fata de 2)
+	apoi daca fac c2 pentru orice numar care e negativ. Fac c2 pe lungimea maxima aflata anterior, nu doar pe lungimea numarului.
+	Inainte sa le adun verifica care e mai mare in modul ca sa pot sa stiu cum va fi rezultatul negativ sau pozitiv.
+	Apoi adun numerele.
+	Daca numarul rezultat este negativ ( pot sa aflu pentru ca am vazut ce numar e mai mare in modul) ii fac complementul fata de 2 
+	ca sa il aduc in reprezentarea normala. Apoi afisez.

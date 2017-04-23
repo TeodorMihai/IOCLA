@@ -1,0 +1,27 @@
+============== Checker Tema 1 IOCLA ==============
+
+Checker-ul poate rula atât pe Windows cât și pe Linux.
+Pentru testare se copiază fișierul sursă ce conține implementarea temei, denumit tema1.asm în directorul ce
+conține checker-ul.
+Fișierele input sunt în directorul inputs, iar valorile folosite ca referințe pentru verificarea rezultatelor
+sunt în directorul outputs.
+
+Rulare:
+	python checker.py
+
+Cerințe Windows:
+	- SASM
+	- python >= 3.0
+
+Cerințe Linux:
+	- gcc
+	- nasm
+	- python >= 3.0
+
+* Precizări:
+	- Directorul unde este instalat python trebuie să fie inclus în PATH. Pentru Windows se poate alege la 
+	  instalare includerea automată, iar pentru Linux este inclus automat.
+	- Pe Windows, în cazul în care SASM nu este instalat în directorul C:\Program Files (x86)\SASM, trebuie
+	  moficată linia următoare în fișierul checker.py pentru a indica către directorul corect:
+
+	  sasmPath = "C:\\Program Files (x86)\\SASM"
